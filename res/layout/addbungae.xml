@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/RelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<ScrollView
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:layout_above="@+id/adview"
+    	android:background="#D8DDE0" >
+    
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+       			android:id="@+id/textView1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginLeft="15dp"
+        		android:layout_marginTop="20dp"
+        		android:layout_marginBottom="5dp"
+        		android:text="기본정보"
+        		android:textColor="#000000"
+        		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    		<TableLayout
+      		  	android:id="@+id/sectionLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="255dp"
+		        android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+        		android:layout_gravity="center"
+        		android:background="@drawable/rounded_back" >
+
+        	<RelativeLayout
+        		android:id="@+id/relativeLayout1"
+        		android:layout_width="match_parent"
+        		android:layout_height="50dp"
+        		android:background="#00000000"
+        		android:layout_gravity="center" >
+        
+       		 <Button
+       		   	android:id="@+id/addCategoryButton"
+            	android:layout_width="match_parent"
+            	android:layout_height="50dp"
+            	android:background="#00000000"
+            	android:text="" />
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="50dp" >
+
+            <RelativeLayout
+        		android:id="@+id/add_relativeLayout1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/category" />
+                
+                <TextView
+                    android:id="@+id/CategoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 분류"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_category"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/CategoryTitle"
+            		android:background="#AAAAAA" />
+
+                <TextView
+                    android:id="@+id/categoryEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/addLine_category"
+                    android:layout_marginLeft="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                    android:id="@+id/add_linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/categoryEdit"
+                    android:gravity="right"
+                    android:layout_weight="1" >
+
+            	<ImageView
+               		android:id="@+id/add_arrowimageView1"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:layout_gravity="center"
+                	android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+                
+                
+            </RelativeLayout>
+            
+        </TableRow>
+
+        
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/name" />
+                
+                <TextView
+                    android:id="@+id/TitleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 제목"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_title"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <EditText
+                    android:id="@+id/titleEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:hint="제목을 입력하세요"
+                    android:layout_gravity="center"
+                    android:maxLines="2"
+                    android:background="#00000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+            
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_gray" />
+                
+                <TextView
+                    android:id="@+id/HostTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="  주 최 자 "
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_host"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="5dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/hostLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+            
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <RelativeLayout
+        		android:id="@+id/relativeLayout2"
+        		android:layout_width="match_parent"
+        		android:layout_height="50dp"
+        		android:background="#00000000"
+        		android:layout_gravity="center" >
+        
+       		 <Button
+       		   	android:id="@+id/addTimeButton"
+            	android:layout_width="match_parent"
+            	android:layout_height="50dp"
+            	android:background="#00000000"
+            	android:text="" />
+        
+        	<TableRow
+            	android:id="@+id/tableRow1"
+            	android:layout_width="wrap_content"
+            	android:layout_gravity="center"
+            	android:layout_height="50dp" >
+            
+            <RelativeLayout
+        		android:id="@+id/detail_relativeLayout3"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                	android:id="@+id/imageView3"
+                	android:layout_width="32dp"
+                	android:layout_height="32dp"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center"
+                	android:layout_centerVertical="true"
+                	android:src="@drawable/clock_red" />
+				
+                <TextView
+        			android:id="@+id/TimeTitle"
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_marginLeft="5dp"
+        			android:text="번개 시간"
+        			android:textColor="#000000"
+        			android:layout_gravity="center"
+        			android:layout_centerVertical="true"
+        			android:layout_toRightOf="@id/imageView3"
+        			android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <View
+            		android:id="@+id/addLine_time"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/TimeTitle"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/timeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/addLine_time"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                    android:id="@+id/add_linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/hostLabel"
+                    android:gravity="right"
+                    android:layout_weight="1" >
+
+            	<ImageView
+               		android:id="@+id/add_arrowimageView3"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:layout_gravity="center"
+                	android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+                
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+       	</RelativeLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+        
+        <RelativeLayout
+        		android:id="@+id/relativeLayout3"
+        		android:layout_width="match_parent"
+        		android:layout_height="50dp"
+        		android:background="#00000000"
+        		android:layout_gravity="center" >
+        
+       		 <Button
+       		   	android:id="@+id/addMapButton"
+            	android:layout_width="match_parent"
+            	android:layout_height="50dp"
+            	android:background="#00000000"
+            	android:text="" />
+            
+        	<TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <RelativeLayout
+        		android:id="@+id/add_relativeLayout5"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/map" />
+
+                <TextView
+                    android:id="@+id/LocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 장소"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_location"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/LocationTitle"
+            		android:background="#AAAAAA" />
+
+                <TextView
+                    android:id="@+id/locationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/addLine_location"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            <LinearLayout
+                    android:id="@+id/add_linearLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/hostLabel"
+                    android:gravity="right"
+                    android:layout_weight="1" >
+
+            	<ImageView
+               		android:id="@+id/add_arrowimageView5"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:layout_gravity="center"
+                	android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+                
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+    </RelativeLayout>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번개 내용"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/sectionLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back"
+        android:padding="5dp" >
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/contentEdit"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:textColor="#000000"
+                android:hint="번개 내용을 입력하세요."
+                android:gravity="top"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="참여 인원"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/sectionLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back" >
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+            <RelativeLayout
+        		android:id="@+id/add_relativeLayout_min"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/min" />
+                
+                <TextView
+                    android:id="@+id/minNumTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="최소 인원"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_min"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/minNumTitle"
+            		android:background="#AAAAAA" />
+                
+                <LinearLayout
+                	android:id="@+id/addlinearLayout9"
+                	android:layout_width="fill_parent"
+                	android:layout_height="45dp"
+                	android:gravity="center"
+                	android:layout_centerVertical="true"
+                	android:layout_marginRight="8dp"
+                	android:layout_toRightOf="@id/addLine_min" >
+                
+                	<ImageButton
+                    	android:layout_width="24dp"
+                    	android:layout_height="24dp"
+                    	android:background="@drawable/minus"
+                    	android:layout_gravity="center"
+                    	android:layout_marginLeft="5dp"
+                    	android:id="@+id/minMinusButton" />
+
+                	<TextView
+                    	android:id="@+id/minNumLabel"
+                    	android:layout_width="0dp"
+                    	android:layout_height="wrap_content"
+                    	android:text="4"
+                    	android:textColor="#000000"
+                    	android:layout_gravity="center"
+                    	android:gravity="center"
+                    	android:layout_weight="1"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                	<ImageButton
+                    	android:layout_width="24dp"
+                    	android:layout_height="24dp"
+                    	android:background="@drawable/plus"
+                    	android:layout_gravity="center"
+                    	android:id="@+id/minPlusButton" />
+
+                </LinearLayout>
+                
+            </RelativeLayout>
+
+        </TableRow>
+        
+        <View
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+        
+        <TableRow 
+            android:id="@+id/tableRow10"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+            <RelativeLayout
+        		android:id="@+id/add_relativeLayout_max"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/max" />
+                
+                <TextView
+                    android:id="@+id/maxNumTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="최대 인원"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView10"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_max"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/maxNumTitle"
+            		android:background="#AAAAAA" />
+                
+                
+                <LinearLayout
+                	android:id="@+id/addlinearLayout10"
+                	android:layout_width="fill_parent"
+                	android:layout_height="45dp"
+                	android:gravity="center"
+                	android:layout_centerVertical="true"
+                	android:layout_marginRight="8dp"
+                	android:layout_marginLeft="5dp"
+                	android:layout_toRightOf="@id/addLine_max" >
+                
+                	<ImageButton
+                    	android:layout_width="24dp"
+                    	android:layout_height="24dp"
+                    	android:background="@drawable/minus"
+                    	android:layout_gravity="center"
+                    	android:id="@+id/maxMinusButton" />
+
+                	<TextView
+                    	android:id="@+id/maxNumLabel"
+                    	android:layout_width="0dp"
+                    	android:layout_height="wrap_content"
+                    	android:text="4"
+                    	android:textColor="#000000"
+                    	android:layout_gravity="center"
+                    	android:gravity="center"
+                    	android:layout_weight="1"
+                    	android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                	<ImageButton
+                    	android:layout_width="24dp"
+                    	android:layout_height="24dp"
+                    	android:background="@drawable/plus"
+                    	android:layout_gravity="center"
+                    	android:id="@+id/maxPlusButton" />
+
+                </LinearLayout>
+                
+            </RelativeLayout>
+
+        </TableRow>
+            
+
+    </TableLayout>
+        
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공개/비밀"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/sectionLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back" >
+        
+        <TableRow 
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <RelativeLayout
+        		android:id="@+id/add_relativeLayout1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/lock_closed" />
+                
+                <TextView
+                    android:id="@+id/openTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="공개/비밀"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView11"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_open"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="2dp"
+            		android:layout_toRightOf="@id/openTitle"
+            		android:background="#AAAAAA" />
+
+                
+                <RadioGroup
+                    android:id="@+id/openPrivateGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/openButton"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/addLine_open"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="0dp" >
+
+        		<RadioButton
+            		android:id="@+id/openButton"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="공개"
+            		android:textColor="#000000" />
+            
+            	<RadioButton
+       				android:id="@+id/privateButton"
+       				android:layout_width="wrap_content"
+       				android:layout_height="wrap_content"
+       				android:layout_marginLeft="10dp"
+       				android:text="비밀"
+       				android:textColor="#000000" />
+                    
+				</RadioGroup>
+                
+            </RelativeLayout>
+
+        </TableRow>
+        
+        <View
+            android:id="@+id/view7"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+		
+        <TableRow 
+            android:id="@+id/tableRow11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/number" />
+                
+                <TextView
+                    android:id="@+id/passTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="비밀 번호"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/addLine_open"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="8dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/passTitle"
+            		android:background="#AAAAAA" />
+                
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#000000"
+                    android:hint="비밀번호"
+                    android:layout_marginRight="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+            </LinearLayout>
+
+        </TableRow>   
+         
+    </TableLayout>
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="번 개 만 들 기" />
+            
+            
+        </LinearLayout>
+    
+	</ScrollView>
+
+	<net.daum.mobilead.MobileAdView
+    	android:id="@+id/adview"
+    	android:visibility="invisible" 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

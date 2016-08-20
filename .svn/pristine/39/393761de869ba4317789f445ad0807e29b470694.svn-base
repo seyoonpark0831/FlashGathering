@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8DDE0" >
+
+    
+
+    <ScrollView
+        android:id="@+id/hscrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/hlinearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+        android:id="@+id/htextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="기본정보"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/hsectionLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back" >
+
+        <TableRow
+            android:id="@+id/htableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:id="@+id/hlinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/himageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/id" />
+                
+                <TextView
+                    android:id="@+id/hCategoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="회원   I D "
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/hostline1"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6.5dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+                <TextView
+                    android:id="@+id/hcategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/hview1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <TableRow
+            android:id="@+id/htableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/hlinearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/himageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/toilet" />
+                
+                <TextView
+                    android:id="@+id/hTitleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="회원 성별"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/hostline2"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="7dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/htitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <View
+            android:id="@+id/hview2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+            
+        <TableRow
+            android:id="@+id/htableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/hlinearLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/himageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/age" />
+                
+                <TextView
+                    android:id="@+id/hHostTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="회원 나이"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/hostline3"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="7dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/hhostLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+        
+        
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/htextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자기 소개"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/hsectionLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back"
+        android:padding="5dp" >
+
+        <TableRow
+            android:id="@+id/htableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" >
+
+            <TextView
+                android:id="@+id/hcontentText"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    
+    
+        </LinearLayout>
+    </ScrollView>
+    
+</LinearLayout>

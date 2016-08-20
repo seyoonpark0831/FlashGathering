@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_weight="1" >
+
+
+        <TextView
+            android:id="@+id/memberIdText"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:text=" I D "
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/MemLine_memid"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="5dp"
+            android:background="#AAAAAA" />
+        
+        <TextView
+            android:id="@+id/memberSexText"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="3dp"
+            android:text=" SEX "
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/MemLine_memsex"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:background="#AAAAAA" />
+        
+        <TextView
+            android:id="@+id/memberAgeText"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:text=" AGE "
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+</LinearLayout>

@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fscrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8DDE0" >
+
+		        
+        <LinearLayout
+            android:id="@+id/flinearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <TextView
+        android:id="@+id/ftextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="기본정보"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TableLayout
+        android:id="@+id/fsectionLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back" >
+
+        <TableRow
+            android:id="@+id/ftableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <LinearLayout
+                android:id="@+id/flinearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" >
+
+                <ImageView
+                android:id="@+id/fimageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/category" />
+                
+                <TextView
+                    android:id="@+id/fCategoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 분류"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_category"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+                <TextView
+                    android:id="@+id/fcategoryLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <View
+            android:id="@+id/fview1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <TableRow
+            android:id="@+id/ftableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/flinearLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" >
+
+                <ImageView
+                android:id="@+id/fimageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/name" />
+                
+                <TextView
+                    android:id="@+id/fTitleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 제목"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_title"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/ftitleLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <View
+            android:id="@+id/fview2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+            
+        <RelativeLayout
+        android:id="@+id/fdetail_relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:layout_gravity="center" >
+        
+        <Button
+            android:id="@+id/fhostButton"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+            android:background="#00000000"
+            android:text="" />
+
+        
+        <TableRow
+            android:id="@+id/ftableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <RelativeLayout
+        		android:id="@+id/fixed_relativeLayout1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/fimageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_gray" />
+                
+                <TextView
+                    android:id="@+id/fHostTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="  주 최 자 "
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fimageView3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_host"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="5dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/fHostTitle"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/fhostLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fixLine_host"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <LinearLayout
+                    android:id="@+id/fixed_linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="45dp"
+                    android:layout_toRightOf="@id/fhostLabel"
+                    android:gravity="right"
+                    android:layout_weight="1" >
+
+            	<ImageView
+               		android:id="@+id/farrowimageView1"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:layout_gravity="center"
+                	android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+                
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+        </RelativeLayout>
+        
+            
+        <View
+            android:id="@+id/fview3"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+        <TableRow
+            android:id="@+id/ftableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <LinearLayout
+                android:id="@+id/flinearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" >
+
+                <ImageView
+                android:id="@+id/fimageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/clock_red" />
+                
+                <TextView
+                    android:id="@+id/fTimeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 시간"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_time"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/ftimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </LinearLayout>
+            
+        </TableRow>
+
+        <View
+            android:id="@+id/fview4"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+            
+        <RelativeLayout
+        android:id="@+id/fdetail_relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:layout_gravity="center" >
+        
+        <Button
+            android:id="@+id/fmapButton"
+            android:layout_width="match_parent"
+        	android:layout_height="50dp"
+            android:background="#00000000"
+            android:text="" />
+        
+        <TableRow
+            android:id="@+id/ftableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" >
+            
+            <RelativeLayout
+        		android:id="@+id/fixed_relativeLayout2"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                android:id="@+id/fimageView3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:src="@drawable/map" />
+                
+                <TextView
+                    android:id="@+id/fLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="번개 장소"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fimageView3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_location"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_toRightOf="@id/fLocationTitle"
+            		android:background="#AAAAAA" />
+
+
+                <TextView
+                    android:id="@+id/flocationLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fixLine_location"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                    android:id="@+id/fixed_linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@id/flocationLabel"
+                    android:gravity="right"
+                    android:layout_weight="1" >
+
+            	<ImageView
+               		android:id="@+id/farrowimageView2"
+                	android:layout_width="40dp"
+                	android:layout_height="40dp"
+                	android:layout_gravity="center"
+                	android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+                
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+        </RelativeLayout>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/ftextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번개 내용"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/fsectionLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back"
+        android:padding="5dp" >
+
+        <TableRow
+            android:id="@+id/ftableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" >
+
+            <TextView
+                android:id="@+id/fcontentText"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/ftextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="참여 인원"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/fsectionLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back">
+
+        <TableRow
+            android:id="@+id/ftableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <RelativeLayout
+        		android:id="@+id/frelativeLayout1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="50dp"
+        		android:layout_gravity="center"
+        		android:gravity="center" >
+
+                <ImageView
+                	android:id="@+id/fimageView3"
+                	android:layout_width="32dp"
+                	android:layout_height="32dp"
+                	android:layout_marginLeft="10dp"
+                	android:layout_gravity="center"
+                	android:layout_centerVertical="true"
+                	android:src="@drawable/users1" />
+                
+                <TextView
+                    android:id="@+id/fCurrentNumTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="현재/최대"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fimageView3"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <View
+            		android:id="@+id/fixLine_minmax"
+            		android:layout_width="1dp"
+            		android:layout_height="50dp"
+            		android:layout_marginLeft="6dp"
+            		android:layout_marginRight="5dp"
+            		android:layout_centerVertical="true"
+            		android:layout_toRightOf="@id/fCurrentNumTitle"
+            		android:background="#AAAAAA" />
+
+                <TextView
+                    android:id="@+id/fcurrentNumLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/fixLine_minmax"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+        
+        
+        
+    <TextView
+        android:id="@+id/ftextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="참여 멤버"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TableLayout
+        android:id="@+id/fsectionLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back" >
+
+        <TableRow
+                android:id="@+id/ftableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+
+                <LinearLayout
+                    android:id="@+id/flinearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/fMemberIdTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="ID"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <View
+            			android:id="@+id/fixLine_memid"
+            			android:layout_width="1dp"
+            			android:layout_height="50dp"
+            			android:layout_marginLeft="6.5dp"
+            			android:layout_marginRight="5dp"
+            			android:background="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/fMemberSexTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center"
+                        android:text="성별"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <View
+            			android:id="@+id/fixLine_memsex"
+            			android:layout_width="1dp"
+            			android:layout_height="50dp"
+            			android:layout_marginLeft="6.5dp"
+            			android:layout_marginRight="5dp"
+            			android:background="#AAAAAA" />
+
+                    <TextView
+                        android:id="@+id/fMemberAgeTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="나이"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+                
+            </TableRow>
+            
+            <View
+            android:id="@+id/fview5"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#AAAAAA" />
+
+            <TableRow
+                android:id="@+id/ftableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ListView
+                    android:id="@+id/fmemberListView"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:cacheColorHint="#00000000" >
+                </ListView>
+
+            </TableRow>
+
+    </TableLayout>
+
+    
+    <TextView
+        android:id="@+id/ftextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한 마 디"
+        android:textColor="#000000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TableLayout
+        android:id="@+id/fsectionLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_back"
+        android:padding="5dp" >
+    
+        
+        <RelativeLayout
+        	android:id="@+id/fdetail_relativeLayout9"
+        	android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+        	android:background="#00000000"
+        	android:layout_gravity="center" >
+            
+            <Button
+            	android:id="@+id/fRefreshButton"
+            	android:layout_width="32dp"
+        		android:layout_height="32dp"
+            	android:background="@drawable/refresh3"
+            	android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:text=""
+            	android:layout_marginRight="5dp" />
+            
+            
+            
+        <TableRow
+            android:id="@+id/ftableRow9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            	<TextView
+                        android:id="@+id/fChatTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="게 시 판"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+            	
+            	
+        </TableRow>
+        
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/fview6"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#AAAAAA" />
+        
+        <TableRow
+                android:id="@+id/ftableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+            
+            <ListView
+                    android:id="@+id/fchatListView"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:stackFromBottom="true"
+                    android:cacheColorHint="#00000000" >
+            </ListView>
+            
+        </TableRow>
+        
+        <View
+            android:id="@+id/fview7"
+            android:layout_width="wrap_content"
+            android:layout_height="2dip"
+            android:background="#AAAAAA" />
+        
+        <TableRow
+                android:id="@+id/ftableRow11"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+				<LinearLayout
+                    android:id="@+id/flinearLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1" >
+
+					<EditText
+					    android:id="@+id/chatText"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="5dp"
+                    	android:layout_marginLeft="5dp"
+					    android:layout_weight="1" >
+
+					</EditText>
+
+                	<Button
+                    	android:id="@+id/sendbutton"
+                    	android:layout_width="wrap_content"
+                    	android:layout_height="40dp"
+                    	android:layout_marginTop="5dp"
+                    	android:layout_marginRight="5dp"
+                    	android:text="전송" />
+
+                </LinearLayout>
+            
+        </TableRow>
+        
+    </TableLayout>        
+            
+        </LinearLayout>
+</ScrollView>

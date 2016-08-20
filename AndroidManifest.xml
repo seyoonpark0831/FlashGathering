@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hunect.bungae"
+    android:versionCode="3"
+    android:versionName="2.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <permission android:name="com.hunect.bungae.permission.C2D_MESSAGE"
+ 		      android:protectionLevel="signature"/>
+ 
+    <uses-permission android:name="com.hunect.bungae.permission.C2D_MESSAGE"/>
+ 
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+	
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="Launch" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AuthSend"></activity>
+        <activity android:name="Register"></activity>
+        <activity android:name="RegisterTOA"></activity>
+        <activity android:name="AddBungae"></activity>
+        <activity android:name="BungaeActivity"></activity>
+        <activity android:name="BungaeListActivity"></activity>
+        <activity android:name="MyBungaeListActivity"></activity>
+        <activity android:name="BungaeDetailActivity"></activity>
+        <activity android:name="FixedBungaeActivity"></activity>
+        <activity android:name="SettingActivity"></activity>
+        <activity android:name="MyBungaeDetailActivity"></activity>
+        <activity android:name="Setting1_Notice"></activity>
+        <activity android:name="Setting4_TOA"></activity>
+        <activity android:name="Setting2_Account"></activity>
+        <activity android:name="C2DMActivity"></activity>
+        <activity android:name="C2DMTestActivity"></activity>
+        <activity android:name="Setting1_Notice_Expand"></activity>
+        
+        
+            
+        <receiver android:name=".C2dm_BroadcastReceiver"
+ 
+			android:permission="com.google.android.c2dm.permission.SEND"> 
+ 
+			<intent-filter>
+	 
+				<action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+	 
+				<category android:name="com.hunect.bungae"/>
+	 
+			</intent-filter>
+	 
+			<intent-filter>
+	 
+				<action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+	 	
+				<category android:name="com.hunect.bungae"/>
+	 
+			</intent-filter>
+ 
+		</receiver>
+        <activity android:name="AuthConfirm"></activity>
+        <activity android:name="BungaeDetailHostActivity"></activity>
+        <activity android:name="BungaeDetailMap"></activity>
+        <activity android:name="BlockUserData"></activity>
+        <activity android:name="FixedBungaeHostActivity"></activity>
+        <activity android:name="Report"></activity>
+        <activity android:name="AddBungaeMap"></activity>
+        
+            
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+package com.hunect.bungae;
+
+import java.util.HashMap;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+
+public class Launch extends Activity {
+
+	private SharedPreferences pref;
+	
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.launch);
+	    setTitle("급하게 번개");
+	    
+	    pref = getSharedPreferences("UserInfo", MODE_PRIVATE);
+	    
+	    Handler h = new Handler();
+	    h.postDelayed(new splashhandler(), 2000);
+	}
+	
+	class splashhandler implements Runnable {
+    	public void run() {
+    		
+		    if(pref.getString("u_id", null) == null) {
+//    			    	Toast.makeText(Launch.this, "UserInfo not found", Toast.LENGTH_LONG).show();
+		    	
+		    	Intent intent = new Intent(Launch.this, C2DMTestActivity.class);
+				startActivity(intent);
+				finish();
+		    }
+		    else {
+		    	//preference를 발견하면 해당 정보를 읽어 다음 activity에서 쓸 class에 기록
+		    	UserInfoClass.getInstance().userInfo = new HashMap<String, String>();
+				UserInfoClass.getInstance().userInfo.put("u_num", pref.getString("u_num", null));
+				UserInfoClass.getInstance().userInfo.put("u_id", pref.getString("u_id", null));
+				UserInfoClass.getInstance().userInfo.put("u_phone", pref.getString("u_phone", null));
+				UserInfoClass.getInstance().userInfo.put("u_sex", pref.getString("u_sex", null));
+				UserInfoClass.getInstance().userInfo.put("u_age", pref.getString("u_age", null));
+				UserInfoClass.getInstance().userInfo.put("u_intro", pref.getString("u_intro", null));
+				UserInfoClass.getInstance().userInfo.put("u_push_id", pref.getString("u_push_id", null));
+				UserInfoClass.getInstance().userInfo.put("u_push_state", pref.getString("u_push_state", null));
+				
+		    	//Toast.makeText(Launch.this, "자동 로그인 : "+UserInfoClass.getInstance().userInfo.get("u_id"), Toast.LENGTH_LONG).show();
+		    	
+				
+		    	Intent intent = new Intent(Launch.this, BungaeActivity.class);
+				startActivity(intent);
+				finish();
+		    }
+    	}
+    }
+
+
+}

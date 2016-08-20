@@ -1,0 +1,50 @@
+package com.hunect.bungae;
+
+import android.app.TabActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TabHost;
+
+public class BungaeActivity extends TabActivity {
+
+	//BungaeActivity.java에 선언
+
+//	public static final String MAIN_URL = "http://www.hunect.com/testphp";
+	public static final String MAIN_URL = "http://www.hunect.com/bungae_1_1";
+	public static final String APNS_URL = "http://www.hunect.com/apnsphp";
+	
+	private TabHost mTabHost;
+
+    
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        setTitle("급하게 번개");
+
+        mTabHost=getTabHost();
+
+        
+        mTabHost.addTab(mTabHost.newTabSpec("tab1")
+        		.setContent(new Intent().setClass(this, BungaeListActivity.class))
+        		.setIndicator("번개", getResources().getDrawable(R.drawable.ic_tab_bungae)));
+        
+        mTabHost.addTab(mTabHost.newTabSpec("tab2")
+        		.setContent(new Intent().setClass(this, MyBungaeListActivity.class))
+        		.setIndicator("내 번개", getResources().getDrawable(R.drawable.ic_tab_mybungae)));
+        
+        mTabHost.addTab(mTabHost.newTabSpec("tab3")
+        		.setIndicator("진행중", getResources().getDrawable(R.drawable.ic_tab_ing))
+        		.setContent(new Intent().setClass(this, FixedBungaeActivity.class)
+                ));
+        
+        mTabHost.addTab(mTabHost.newTabSpec("tab4")
+        		.setIndicator("설정", getResources().getDrawable(R.drawable.ic_tab_setting))
+        		.setContent(new Intent().setClass(this, SettingActivity.class)
+                ));
+        
+    }
+    
+   
+}
